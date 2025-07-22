@@ -10,7 +10,7 @@ const Login = ({ settoken }) => {
     try {
       e.preventDefault();
 
-      const response = await axios.post(backendURL + "/api/user/admin", {
+      const response = await axios.post("https://e-commercer-website-for-clothes-backend.onrender.com/api/user/admin", {
         email,
         password,
       });
